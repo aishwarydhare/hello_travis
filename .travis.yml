@@ -17,6 +17,6 @@ deploy:
   bucket_path: "react-travis"
   on:
     branch: master
-  access_key_id: "AKIAJZSQE4ZOZJPNGPLQ"
+  access_key_id: "$EBS_ACCESS_KEY"
   secret_access_key: 
-    secure: "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"
+    secure: "$EBS_ACCESS_SECRET"
