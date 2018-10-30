@@ -13,7 +13,7 @@ deploy:
   region: "us-west-2"
   app: "react-travis"
   env: "ReactTravis-env"
-  bucket_name: "arn:aws:s3:::elasticbeanstalk-us-east-2-723547840476"
+  bucket_name: "elasticbeanstalk-us-east-2-723547840476"
   bucket_path: "react-travis"
   on:
     branch: master
