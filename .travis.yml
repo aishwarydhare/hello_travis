@@ -7,4 +7,16 @@ before_install:
 
 script:
   - docker run aishwarydhare/docker-react npm run test -- --coverage
-  
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "react-travis"
+  env: "Docker-env"
+  bucket_name: "elasticbeanstalk-us-east-2-723547840476"
+  bucket_path: "react-travis"
+  on:
+    branch: master
+  access_key_id: "#ebs_iam_key"
+  secret_access_key: 
+    secure: "#ebs_iam_secret"
