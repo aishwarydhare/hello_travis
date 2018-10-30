@@ -12,7 +12,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
   app: "react-travis"
-  env: "Docker-env"
+  env: "ReactTravis-env"
   bucket_name: "arn:aws:s3:::elasticbeanstalk-us-east-2-723547840476"
   bucket_path: "react-travis"
   on:
